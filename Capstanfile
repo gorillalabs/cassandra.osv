@@ -30,6 +30,7 @@ cmdline: >
   -Dcassandra.logdir=/usr/cassandra/logs
   -Dcassandra.storagedir=/usr/cassandra/data
   -Dcassandra-foreground=yes
+  -Dcassandra.native.epoll.enabled=false
   -classpath /usr/cassandra/conf/:/usr/cassandra/lib/*
   org.apache.cassandra.service.CassandraDaemon
 
