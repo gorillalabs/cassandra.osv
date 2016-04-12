@@ -1,0 +1,7 @@
+run:
+    - POST: /env/HOSTNAME
+      val: elasticsearch.local
+    - POST: /os/hostname
+      name: elasticsearch.local
+include:
+    - load-from-cloud
