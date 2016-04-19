@@ -16,6 +16,7 @@ jna=${upstream_dir}/jna-${jna_version}.jar
 
 
 
+mkdir -p ${current_dir}/ROOTFS
 rm -r ${current_dir}/ROOTFS
 mkdir -p ${current_dir}/ROOTFS/usr/cassandra/lib
 mkdir -p ${current_dir}/ROOTFS/usr/cassandra/conf
