@@ -22,7 +22,7 @@ rm -r ${upstream_dir}/*
 
 cd  ${upstream_dir}/
 curl -o ${tarball_name} http://archive.apache.org/dist/cassandra/${VERSION}/${tarball_name}
-tar xvfj ${tarball_name}
+tar xvf ${tarball_name}
 
 curl -o jna-${jna_version}.jar https://maven.java.net/content/repositories/releases/net/java/dev/jna/jna/${jna_version}/jna-${jna_version}.jar
 
