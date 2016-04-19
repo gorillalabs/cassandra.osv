@@ -25,3 +25,8 @@ cp ${jna} ${current_dir}/ROOTFS/usr/cassandra/lib
 ln -sfn ${cassandra_dir} ${upstream_dir}/current
 cp ${current_dir}/cassandra.yaml ${current_dir}/ROOTFS/usr/cassandra/conf/cassandra.yaml
 cp ${current_dir}/cassandra.yaml.template ${current_dir}/ROOTFS/usr/cassandra/conf/cassandra.yaml.template
+
+mkdir -p ${current_dir}/ROOTFS/usr/cassandra/data/data
+mkdir -p ${current_dir}/ROOTFS/usr/cassandra/data/commitlog
+mkdir -p ${current_dir}/ROOTFS/usr/cassandra/data/saved_caches
+mkdir -p ${current_dir}/ROOTFS/usr/cassandra/data/hints
