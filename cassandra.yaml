@@ -490,13 +490,12 @@ ssl_storage_port: 7001
 # address will be used. If true the first ipv6 address will be used. Defaults to false preferring
 # ipv4. If there is only one address it will be selected regardless of ipv4/ipv6.
 #listen_address: localhost
-listen_address: 0.0.0.0 ## yeah, right, that's wrong. But its simple and will do for my test. Will move to cloudinit, etcd, zookeeper, whatever is necessary for seeding later on and bind to eth0 instead.
-# listen_interface: eth0
+listen_interface: eth0
 # listen_interface_prefer_ipv6: false
 
 # Address to broadcast to other Cassandra nodes
 # Leaving this blank will set it to the same value as listen_address
-# broadcast_address: 1.2.3.4
+broadcast_address: localhost
 
 # When using multiple physical network interfaces, set this
 # to true to listen on broadcast_address in addition to
@@ -504,7 +503,7 @@ listen_address: 0.0.0.0 ## yeah, right, that's wrong. But its simple and will do
 # interfaces.
 # Ignore this property if the network configuration automatically
 # routes  between the public and private networks such as EC2.
-# listen_on_broadcast_address: false
+listen_on_broadcast_address: true
 
 # Internode authentication backend, implementing IInternodeAuthenticator;
 # used to allow/disallow connections from peer nodes.
